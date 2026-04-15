@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jungblee <jungblee@student.42gyeongsan.kr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/04 15:17:44 by jungblee          #+#    #+#             */
-/*   Updated: 2026/04/14 16:32:48 by jungblee         ###   ########.fr       */
+/*   Created: 2026/04/23 19:05:29 by jungblee          #+#    #+#             */
+/*   Updated: 2026/04/28 11:57:43 by jungblee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+/* Avoids branch misprediction via a single unsigned comparison
+and bit manipulation.
+
+Assumes ASCII encoding (exploits the 1-bit difference at Bit 5). */
+int	ft_tolower(int c)
 {
-	return ((unsigned)c - 32 <= 126 - 32);
+	return (c ^ (((unsigned)c - 'A' <= 'Z' - 'A') << 5));
 }
