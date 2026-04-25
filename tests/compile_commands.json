@@ -1,0 +1,37 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-I..",
+      "-c",
+      "-o",
+      "test_main.o",
+      "test_main.c"
+    ],
+    "directory": "/home/jungblee/Projects/libft/tests",
+    "file": "/home/jungblee/Projects/libft/tests/test_main.c",
+    "output": "/home/jungblee/Projects/libft/tests/test_main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-O2",
+      "-c",
+      "-I",
+      ".",
+      "-o",
+      "ft_atoi.o",
+      "ft_atoi.c"
+    ],
+    "directory": "/home/jungblee/Projects/libft",
+    "file": "/home/jungblee/Projects/libft/ft_atoi.c",
+    "output": "/home/jungblee/Projects/libft/ft_atoi.o"
+  }
+]
