@@ -6,17 +6,12 @@
 /*   By: jungblee <jungblee@student.42gyeongsan.kr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 15:46:19 by jungblee          #+#    #+#             */
-/*   Updated: 2026/04/29 15:46:19 by jungblee         ###   ########.fr       */
+/*   Updated: 2026/07/14 10:19:42 by jungblee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ftctype.h"
 #include "ftstdlib.h"
-
-static int	ft_isspace(int c)
-{
-	return (c == ' ' || (unsigned)c - '\t' <= '\r' - '\t');
-}
 
 /*
  * Accumulates as a negative value to prevent INT_MIN overflow.

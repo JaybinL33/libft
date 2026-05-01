@@ -8,6 +8,7 @@ SRCS_FTCTYPE = $(addprefix $(SRC_DIR)/ftctype/, \
                 ft_isalnum.c \
                 ft_isalpha.c \
                 ft_isascii.c \
+                ft_isspace.c \
                 ft_isdigit.c \
                 ft_isprint.c \
                 ft_tolower.c \
