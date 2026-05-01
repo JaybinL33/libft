@@ -1,0 +1,882 @@
+[
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftctype/ft_isalnum.d",
+   "-c",
+   "src/ftctype/ft_isalnum.c",
+   "-o",
+   "build/obj/ftctype/ft_isalnum.o"
+  ],
+  "file": "src/ftctype/ft_isalnum.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftctype/ft_isalpha.d",
+   "-c",
+   "src/ftctype/ft_isalpha.c",
+   "-o",
+   "build/obj/ftctype/ft_isalpha.o"
+  ],
+  "file": "src/ftctype/ft_isalpha.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftctype/ft_isascii.d",
+   "-c",
+   "src/ftctype/ft_isascii.c",
+   "-o",
+   "build/obj/ftctype/ft_isascii.o"
+  ],
+  "file": "src/ftctype/ft_isascii.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftctype/ft_isdigit.d",
+   "-c",
+   "src/ftctype/ft_isdigit.c",
+   "-o",
+   "build/obj/ftctype/ft_isdigit.o"
+  ],
+  "file": "src/ftctype/ft_isdigit.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftctype/ft_isprint.d",
+   "-c",
+   "src/ftctype/ft_isprint.c",
+   "-o",
+   "build/obj/ftctype/ft_isprint.o"
+  ],
+  "file": "src/ftctype/ft_isprint.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftctype/ft_tolower.d",
+   "-c",
+   "src/ftctype/ft_tolower.c",
+   "-o",
+   "build/obj/ftctype/ft_tolower.o"
+  ],
+  "file": "src/ftctype/ft_tolower.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftctype/ft_toupper.d",
+   "-c",
+   "src/ftctype/ft_toupper.c",
+   "-o",
+   "build/obj/ftctype/ft_toupper.o"
+  ],
+  "file": "src/ftctype/ft_toupper.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_bzero.d",
+   "-c",
+   "src/ftstring/ft_bzero.c",
+   "-o",
+   "build/obj/ftstring/ft_bzero.o"
+  ],
+  "file": "src/ftstring/ft_bzero.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_memchr.d",
+   "-c",
+   "src/ftstring/ft_memchr.c",
+   "-o",
+   "build/obj/ftstring/ft_memchr.o"
+  ],
+  "file": "src/ftstring/ft_memchr.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_memcmp.d",
+   "-c",
+   "src/ftstring/ft_memcmp.c",
+   "-o",
+   "build/obj/ftstring/ft_memcmp.o"
+  ],
+  "file": "src/ftstring/ft_memcmp.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_memcpy.d",
+   "-c",
+   "src/ftstring/ft_memcpy.c",
+   "-o",
+   "build/obj/ftstring/ft_memcpy.o"
+  ],
+  "file": "src/ftstring/ft_memcpy.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_memmove.d",
+   "-c",
+   "src/ftstring/ft_memmove.c",
+   "-o",
+   "build/obj/ftstring/ft_memmove.o"
+  ],
+  "file": "src/ftstring/ft_memmove.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_memset.d",
+   "-c",
+   "src/ftstring/ft_memset.c",
+   "-o",
+   "build/obj/ftstring/ft_memset.o"
+  ],
+  "file": "src/ftstring/ft_memset.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_strchr.d",
+   "-c",
+   "src/ftstring/ft_strchr.c",
+   "-o",
+   "build/obj/ftstring/ft_strchr.o"
+  ],
+  "file": "src/ftstring/ft_strchr.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_strdup.d",
+   "-c",
+   "src/ftstring/ft_strdup.c",
+   "-o",
+   "build/obj/ftstring/ft_strdup.o"
+  ],
+  "file": "src/ftstring/ft_strdup.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_strlcat.d",
+   "-c",
+   "src/ftstring/ft_strlcat.c",
+   "-o",
+   "build/obj/ftstring/ft_strlcat.o"
+  ],
+  "file": "src/ftstring/ft_strlcat.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_strlcpy.d",
+   "-c",
+   "src/ftstring/ft_strlcpy.c",
+   "-o",
+   "build/obj/ftstring/ft_strlcpy.o"
+  ],
+  "file": "src/ftstring/ft_strlcpy.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_strlen.d",
+   "-c",
+   "src/ftstring/ft_strlen.c",
+   "-o",
+   "build/obj/ftstring/ft_strlen.o"
+  ],
+  "file": "src/ftstring/ft_strlen.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_strncmp.d",
+   "-c",
+   "src/ftstring/ft_strncmp.c",
+   "-o",
+   "build/obj/ftstring/ft_strncmp.o"
+  ],
+  "file": "src/ftstring/ft_strncmp.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_strnstr.d",
+   "-c",
+   "src/ftstring/ft_strnstr.c",
+   "-o",
+   "build/obj/ftstring/ft_strnstr.o"
+  ],
+  "file": "src/ftstring/ft_strnstr.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstring/ft_strrchr.d",
+   "-c",
+   "src/ftstring/ft_strrchr.c",
+   "-o",
+   "build/obj/ftstring/ft_strrchr.o"
+  ],
+  "file": "src/ftstring/ft_strrchr.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstdlib/ft_atoi.d",
+   "-c",
+   "src/ftstdlib/ft_atoi.c",
+   "-o",
+   "build/obj/ftstdlib/ft_atoi.o"
+  ],
+  "file": "src/ftstdlib/ft_atoi.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftstdlib/ft_calloc.d",
+   "-c",
+   "src/ftstdlib/ft_calloc.c",
+   "-o",
+   "build/obj/ftstdlib/ft_calloc.o"
+  ],
+  "file": "src/ftstdlib/ft_calloc.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_itoa.d",
+   "-c",
+   "src/ftcustom/ft_itoa.c",
+   "-o",
+   "build/obj/ftcustom/ft_itoa.o"
+  ],
+  "file": "src/ftcustom/ft_itoa.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_putchar_fd.d",
+   "-c",
+   "src/ftcustom/ft_putchar_fd.c",
+   "-o",
+   "build/obj/ftcustom/ft_putchar_fd.o"
+  ],
+  "file": "src/ftcustom/ft_putchar_fd.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_putendl_fd.d",
+   "-c",
+   "src/ftcustom/ft_putendl_fd.c",
+   "-o",
+   "build/obj/ftcustom/ft_putendl_fd.o"
+  ],
+  "file": "src/ftcustom/ft_putendl_fd.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_putnbr_fd.d",
+   "-c",
+   "src/ftcustom/ft_putnbr_fd.c",
+   "-o",
+   "build/obj/ftcustom/ft_putnbr_fd.o"
+  ],
+  "file": "src/ftcustom/ft_putnbr_fd.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_putstr_fd.d",
+   "-c",
+   "src/ftcustom/ft_putstr_fd.c",
+   "-o",
+   "build/obj/ftcustom/ft_putstr_fd.o"
+  ],
+  "file": "src/ftcustom/ft_putstr_fd.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_putnstr_fd.d",
+   "-c",
+   "src/ftcustom/ft_putnstr_fd.c",
+   "-o",
+   "build/obj/ftcustom/ft_putnstr_fd.o"
+  ],
+  "file": "src/ftcustom/ft_putnstr_fd.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_split.d",
+   "-c",
+   "src/ftcustom/ft_split.c",
+   "-o",
+   "build/obj/ftcustom/ft_split.o"
+  ],
+  "file": "src/ftcustom/ft_split.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_striteri.d",
+   "-c",
+   "src/ftcustom/ft_striteri.c",
+   "-o",
+   "build/obj/ftcustom/ft_striteri.o"
+  ],
+  "file": "src/ftcustom/ft_striteri.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_strjoin.d",
+   "-c",
+   "src/ftcustom/ft_strjoin.c",
+   "-o",
+   "build/obj/ftcustom/ft_strjoin.o"
+  ],
+  "file": "src/ftcustom/ft_strjoin.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_strmapi.d",
+   "-c",
+   "src/ftcustom/ft_strmapi.c",
+   "-o",
+   "build/obj/ftcustom/ft_strmapi.o"
+  ],
+  "file": "src/ftcustom/ft_strmapi.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_strtrim.d",
+   "-c",
+   "src/ftcustom/ft_strtrim.c",
+   "-o",
+   "build/obj/ftcustom/ft_strtrim.o"
+  ],
+  "file": "src/ftcustom/ft_strtrim.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftcustom/ft_substr.d",
+   "-c",
+   "src/ftcustom/ft_substr.c",
+   "-o",
+   "build/obj/ftcustom/ft_substr.o"
+  ],
+  "file": "src/ftcustom/ft_substr.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftllist/ft_lstadd_back.d",
+   "-c",
+   "src/ftllist/ft_lstadd_back.c",
+   "-o",
+   "build/obj/ftllist/ft_lstadd_back.o"
+  ],
+  "file": "src/ftllist/ft_lstadd_back.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftllist/ft_lstadd_front.d",
+   "-c",
+   "src/ftllist/ft_lstadd_front.c",
+   "-o",
+   "build/obj/ftllist/ft_lstadd_front.o"
+  ],
+  "file": "src/ftllist/ft_lstadd_front.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftllist/ft_lstclear.d",
+   "-c",
+   "src/ftllist/ft_lstclear.c",
+   "-o",
+   "build/obj/ftllist/ft_lstclear.o"
+  ],
+  "file": "src/ftllist/ft_lstclear.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftllist/ft_lstdelone.d",
+   "-c",
+   "src/ftllist/ft_lstdelone.c",
+   "-o",
+   "build/obj/ftllist/ft_lstdelone.o"
+  ],
+  "file": "src/ftllist/ft_lstdelone.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftllist/ft_lstiter.d",
+   "-c",
+   "src/ftllist/ft_lstiter.c",
+   "-o",
+   "build/obj/ftllist/ft_lstiter.o"
+  ],
+  "file": "src/ftllist/ft_lstiter.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftllist/ft_lstlast.d",
+   "-c",
+   "src/ftllist/ft_lstlast.c",
+   "-o",
+   "build/obj/ftllist/ft_lstlast.o"
+  ],
+  "file": "src/ftllist/ft_lstlast.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftllist/ft_lstmap.d",
+   "-c",
+   "src/ftllist/ft_lstmap.c",
+   "-o",
+   "build/obj/ftllist/ft_lstmap.o"
+  ],
+  "file": "src/ftllist/ft_lstmap.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftllist/ft_lstnew.d",
+   "-c",
+   "src/ftllist/ft_lstnew.c",
+   "-o",
+   "build/obj/ftllist/ft_lstnew.o"
+  ],
+  "file": "src/ftllist/ft_lstnew.c"
+ },
+ {
+  "directory": "/home/jungblee/Projects/libft",
+  "arguments": [
+   "cc",
+   "-I./include/",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-O2",
+   "-MMD",
+   "-MP",
+   "-MF",
+   "build/dep/ftllist/ft_lstsize.d",
+   "-c",
+   "src/ftllist/ft_lstsize.c",
+   "-o",
+   "build/obj/ftllist/ft_lstsize.o"
+  ],
+  "file": "src/ftllist/ft_lstsize.c"
+ }
+]
