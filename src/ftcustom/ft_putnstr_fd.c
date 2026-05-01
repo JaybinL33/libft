@@ -12,20 +12,19 @@
 
 #include "ftcustom.h"
 
-ssize_t	ft_putnstr_fd(char *s, int fd, size_t len)
+ssize_t	ft_putnstr_fd(const void *s, int fd, size_t len)
 {
-	ssize_t	bytes_written;
-	ssize_t	total_written;
+	const char	*s_byte = s;
+	ssize_t		bytes_written;
+	ssize_t		total_written;
 
 	total_written = 0;
 	while (len)
 	{
-		bytes_written = write(fd, s, len);
-		if (bytes_written < 0)
+		bytes_written = write(fd, s_byte, len);
+		if (bytes_written <= 0)
 			return (-1);
-		if (!bytes_written)
-			break ;
-		s += bytes_written;
+		s_byte += bytes_written;
 		total_written += bytes_written;
 		len -= bytes_written;
 	}
