@@ -13,7 +13,7 @@
 #include "ftstring.h"
 #include <stddef.h>
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *__restrict dest, const void *__restrict src, size_t n)
 {
 	char		*dest_byte;
 	const char	*src_byte;
