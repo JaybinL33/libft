@@ -22,7 +22,7 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
-void	ft_putchar_fd(char c, int fd);
+ssize_t	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 ssize_t	ft_putnstr_fd(char *s, int fd, size_t len);
 void	ft_putendl_fd(char *s, int fd);
