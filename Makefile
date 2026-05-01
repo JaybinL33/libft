@@ -39,6 +39,7 @@ SRCS_FTCUSTOM = $(addprefix $(SRC_DIR)/ftcustom/, \
                  ft_putendl_fd.c \
                  ft_putnbr_fd.c \
                  ft_putstr_fd.c \
+                 ft_putnstr_fd.c \
                  ft_split.c \
                  ft_striteri.c \
                  ft_strjoin.c \
