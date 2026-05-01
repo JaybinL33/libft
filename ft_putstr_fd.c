@@ -15,5 +15,16 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, s, ft_strlen(s));
+	size_t	len;
+	ssize_t	bytes_written;
+
+	len = ft_strlen(s);
+	while (len)
+	{
+		bytes_written = write(fd, s, len);
+		if (bytes_written <= 0)
+			return ;
+		s += bytes_written;
+		len -= bytes_written;
+	}
 }

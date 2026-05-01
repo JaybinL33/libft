@@ -28,19 +28,16 @@ static int	ft_get_len(unsigned int n)
 
 char	*ft_itoa(int n)
 {
-	char			*s;
-	int				len;
-	int				is_neg;
-	unsigned int	nb;
+	char	*s;
+	int		len;
+	int		is_neg;
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	is_neg = (n < 0);
 	if (is_neg)
-		nb = -n;
-	else
-		nb = n;
-	len = ft_get_len(nb);
+		n = -n;
+	len = ft_get_len(n);
 	s = malloc(sizeof(char) * (len + is_neg + 1));
 	if (!s)
 		return (NULL);
@@ -49,8 +46,8 @@ char	*ft_itoa(int n)
 		s[0] = '-';
 	while (len--)
 	{
-		s[len + is_neg] = (nb % 10) + '0';
-		nb /= 10;
+		s[len + is_neg] = (n % 10) + '0';
+		n /= 10;
 	}
 	return (s);
 }

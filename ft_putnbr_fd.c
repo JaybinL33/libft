@@ -15,28 +15,28 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	s[11];
+	char	s[12];
 	int		i;
-	int		neg;
+	int		is_neg;
 
 	if (n == -2147483648)
 	{
-		if (write(fd, "-2147483648", 11) == -1)
-			return ;
+		ft_putstr_fd("-2147483648", fd);
 		return ;
 	}
-	i = 11;
-	neg = n < 0;
-	if (neg)
+	is_neg = n < 0;
+	if (is_neg)
 		n = -n;
-	if (n == 0)
+	i = 11;
+	s[i] = '\0';
+	if (!n)
 		s[--i] = '0';
 	while (n)
 	{
 		s[--i] = (n % 10) + '0';
 		n /= 10;
 	}
-	if (neg)
+	if (is_neg)
 		s[--i] = '-';
-	write(fd, s + i, 11 - i);
+	ft_putstr_fd(s + i, fd);
 }
