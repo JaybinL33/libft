@@ -14,6 +14,10 @@
 #include <errno.h>
 #include <stdlib.h>
 
+/*
+ * Safe multiplication check: (size_t)-1 is 0b11...11 (MAX).
+ * Logic: If (MAX / size < nmemb), then (size * nmemb) would overflow.
+ */
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*p;

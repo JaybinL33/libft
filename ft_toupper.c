@@ -12,10 +12,12 @@
 
 #include "libft.h"
 
-/* Avoids branch misprediction via a single unsigned comparison
-and bit manipulation.
-
-Assumes ASCII encoding (exploits the 1-bit difference at Bit 5). */
+/*
+ * Branchless case conversion:
+ * 1) Range check: (unsigned)c - 'a' <= 'z' - 'a' returns 1 if lowercase.
+ * 2) Bit flip: 1 << 5 evaluates to 32 (0b00100000).
+ *    XORing with Bit 5 toggles lowercase to uppercase.
+ */
 int	ft_toupper(int c)
 {
 	return (c ^ (((unsigned)c - 'a' <= 'z' - 'a') << 5));

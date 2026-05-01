@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+ * Range compression: 0 <= c - 32 <= 94.
+ * Values below 32 underflow to MAX_UINT, naturally failing the check.
+ */
 int	ft_isprint(int c)
 {
 	return ((unsigned)c - 32 <= 126 - 32);

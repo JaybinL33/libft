@@ -14,21 +14,10 @@
 #include <stddef.h>
 #include <stdint.h>
 
-/* Let U_DIFF = (uintptr_t)src - (uintptr_t)dest
-
-No-overlap unsigned modular arithmetic range: n <= U_DIFF <= -n
-
-Added n - 1 or -n to the range for compressing the two-sided check
-into a single unsigned comparison:
-
-1) 2n - 1 <= U_DIFF + n - 1 <= -1
-2) 0 <= U_DIFF - n <= -2n
-
-Since '0(MIN) <=' and '<= -1(MAX)' are implicitly always true
-in unsigned modular arithmetic, they are safely omitted:
-
-1) 2n - 1 <= U_DIFF + n - 1
-2) U_DIFF - n <= -2n */
+/*
+ * Single unsigned comparison for memory overlap.
+ * Compresses the disjoint bounds (n <= src - dest <= -n) into one check.
+ */
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char		*dest_byte;

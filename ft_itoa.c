@@ -13,31 +13,44 @@
 #include "libft.h"
 #include <stdlib.h>
 
+static int	ft_get_len(unsigned int n)
+{
+	int	len;
+
+	len = 1;
+	while (n >= 10)
+	{
+		n /= 10;
+		len++;
+	}
+	return (len);
+}
+
 char	*ft_itoa(int n)
 {
-	char	*s;
-	int		neg_flag;
-	int		n_curr;
-	int		digit;
+	char			*s;
+	int				len;
+	int				is_neg;
+	unsigned int	nb;
 
-	digit = 1;
-	n_curr = n;
-	while ((unsigned)n_curr - 10 <= (unsigned)-20)
-	{
-		n_curr /= 10;
-		digit++;
-	}
-	neg_flag = n < 0;
-	s = malloc(sizeof(char) * (digit + neg_flag + 1));
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	is_neg = (n < 0);
+	if (is_neg)
+		nb = -n;
+	else
+		nb = n;
+	len = ft_get_len(nb);
+	s = malloc(sizeof(char) * (len + is_neg + 1));
 	if (!s)
 		return (NULL);
-	s[digit + neg_flag] = '\0';
-	while (digit)
-	{
-		s[digit-- + neg_flag - 1] = (((-neg_flag ^ (n % 10)) + neg_flag) + '0');
-		n /= 10;
-	}
-	if (neg_flag)
+	s[len + is_neg] = '\0';
+	if (is_neg)
 		s[0] = '-';
+	while (len--)
+	{
+		s[len + is_neg] = (nb % 10) + '0';
+		nb /= 10;
+	}
 	return (s);
 }

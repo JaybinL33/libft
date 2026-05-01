@@ -16,20 +16,27 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	s[11];
-	int		digit;
-	int		neg_flag;
+	int		i;
+	int		neg;
 
-	digit = 1;
-	neg_flag = n < 0;
-	while ((unsigned)n - 10 <= (unsigned)-20)
+	if (n == -2147483648)
 	{
-		s[11 - digit] = (((-neg_flag ^ (n % 10)) + neg_flag) + '0');
-		n /= 10;
-		digit++;
-	}
-	s[11 - digit] = (((-neg_flag ^ n) + neg_flag) + '0');
-	if (neg_flag)
-		s[11 - ++digit] = '-';
-	if (write(fd, s + 11 - digit, digit) == -1)
+		if (write(fd, "-2147483648", 11) == -1)
+			return ;
 		return ;
+	}
+	i = 11;
+	neg = n < 0;
+	if (neg)
+		n = -n;
+	if (n == 0)
+		s[--i] = '0';
+	while (n)
+	{
+		s[--i] = (n % 10) + '0';
+		n /= 10;
+	}
+	if (neg)
+		s[--i] = '-';
+	write(fd, s + i, 11 - i);
 }

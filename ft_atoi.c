@@ -11,27 +11,32 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 static int	ft_isspace(int c)
 {
 	return (c == ' ' || (unsigned)c - '\t' <= '\r' - '\t');
 }
 
+/*
+ * Accumulates as a negative value to prevent INT_MIN overflow.
+ * Uses (n ^ mask) - mask for branchless 2's complement negation.
+ */
 int	ft_atoi(const char *nptr)
 {
 	int	n;
-	int	neg_flag;
 	int	mask;
 
-	n = 0;
-	neg_flag = 0;
 	while (ft_isspace(*nptr))
 		nptr++;
-	if (((*nptr + 1) | 2) == '-' + 1)
-		neg_flag = ((*nptr++ + 1) & 2) >> 1;
+	mask = -1;
+	if (*nptr == '-' || *nptr == '+')
+	{
+		if (*nptr == '-')
+			mask = 0;
+		nptr++;
+	}
+	n = 0;
 	while (ft_isdigit(*nptr))
 		n = 10 * n - (*nptr++ - '0');
-	mask = neg_flag - 1;
-	return ((mask ^ n) - mask);
+	return ((n ^ mask) - mask);
 }

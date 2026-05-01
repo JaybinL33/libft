@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/*
+ * 127 is 0b01111111. ~127 isolates bits outside the 7-bit ASCII range.
+ */
 int	ft_isascii(int c)
 {
 	return (!(c & ~127));
