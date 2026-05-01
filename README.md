@@ -3,7 +3,7 @@
 # Libft
 
 ## Description
-Libft is a library of C functions re-implemented as part of the 42 Gyeongsan curriculum. It includes versions of standard C library functions (`libc`) as well as additional utility functions for string manipulation, memory management, and linked list handling.
+Libft is a library of C functions re-implemented as part of the 42 Gyeongsan curriculum. It includes versions of standard C library functions (`libc`) as well as additional utility functions for string manipulation, memory management, linked list handling, and formatted output.
 
 ## Library Functions
 
@@ -44,6 +44,14 @@ Libft is a library of C functions re-implemented as part of the 42 Gyeongsan cur
 - `ft_putstr_fd`: Outputs a string to a file descriptor.
 - `ft_putendl_fd`: Outputs a string followed by a newline to a file descriptor.
 - `ft_putnbr_fd`: Outputs an integer to a file descriptor.
+
+### Formatted Output
+- `ft_printf`: Writes formatted output to standard output.
+- `ft_dprintf`: Writes formatted output to a file descriptor.
+- `ft_vdprintf`: Writes formatted output from a `va_list` to a file descriptor.
+
+Supported conversions: `%c`, `%s`, `%p`, `%d`, `%i`, `%u`, `%x`, `%X`, and `%%`.
+All formatted-output functions are included in `libft.a`; no separate `libftprintf.a` is required.
 
 ### Linked List Functions
 These functions use the `t_list` structure defined in `libft.h`:
@@ -107,13 +115,12 @@ make re
 ```
 
 ### Usage
-To use the library in a C project, include the header file and link the compiled library:
+To use the library in a C project, include the required module header and link `libft.a`:
 ```c
-#include "libft.h"
+#include "ft_printf.h"
 ```
-Link the library during compilation:
 ```bash
-cc main.c -L. -lft
+cc main.c -I include -L. -lft
 ```
 
 ## Resources

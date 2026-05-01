@@ -2,7 +2,7 @@ srcdir = .
 SHELL = /usr/bin/env bash
 
 SRC_DIR = $(srcdir)/src
-SRC_DIRS = $(addprefix $(SRC_DIR)/, ftctype ftstring ftstdlib ftcustom ftllist)
+SRC_DIRS = $(addprefix $(SRC_DIR)/, ftctype ftstring ftstdlib ftcustom ftllist ftprintf)
 
 SRCS_FTCTYPE = $(addprefix $(SRC_DIR)/ftctype/, \
                 ft_isalnum.c \
@@ -60,7 +60,13 @@ SRCS_FTLLIST = $(addprefix $(SRC_DIR)/ftllist/, \
                 ft_lstnew.c \
                 ft_lstsize.c \
                 )
-SRCS = $(SRCS_FTCTYPE) $(SRCS_FTSTRING) $(SRCS_FTSTDLIB) $(SRCS_FTCUSTOM) $(SRCS_FTLLIST)
+SRCS_FTPRINTF = $(addprefix $(SRC_DIR)/ftprintf/, \
+                ft_printf.c \
+                ft_printf_io.c \
+                ft_printf_fmt.c \
+                )
+SRCS = $(SRCS_FTCTYPE) $(SRCS_FTSTRING) $(SRCS_FTSTDLIB) \
+       $(SRCS_FTCUSTOM) $(SRCS_FTLLIST) $(SRCS_FTPRINTF)
 
 OUT_DIR = .
 BUILD_DIR = build
